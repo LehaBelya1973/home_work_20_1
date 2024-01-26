@@ -18,3 +18,11 @@ def categories(request):
     }
     return render(request, 'main/categories.html', context)
 
+
+def category_product(request, pk):
+    category_item = Category.objects.get(pk=pk)
+    context = {
+        'object_list': Product.objects.filter(category_id=pk),
+        'title': f'Товары из категории {category_item.name}',                             
+    }
+    return render(request, 'main/products.html', context)
