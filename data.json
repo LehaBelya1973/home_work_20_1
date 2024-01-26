@@ -1,50 +1,115 @@
 [
   {
     "model": "mainapp.category",
+    "pk": 12,
+    "fields": {
+      "name": "Напитки",
+      "description": "Все напитки, включая алкоголь и пиво"
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 13,
+    "fields": {
+      "name": "Гастроном",
+      "description": "Молоко, сыры, вся мясная и колбасная продукция"
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 14,
+    "fields": {
+      "name": "Бакалея",
+      "description": "Сахар, соль, все крупы, каши"
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 15,
+    "fields": {
+      "name": "Консервация",
+      "description": "Все консервы: рыбные, мясные, овощные и фруктовые"
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 16,
+    "fields": {
+      "name": "Овощи",
+      "description": "Все свежие овощи и зелень"
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 17,
+    "fields": {
+      "name": "Фрукты",
+      "description": "Все свежие фрукты"
+    }
+  },
+  {
+    "model": "mainapp.product",
     "pk": 1,
     "fields": {
-      "name_category": "Напиток",
-      "description_category": "Лимонад"
+      "name": "Сыр Костромской",
+      "description": "Сыр свежий, срок хранения не более 30 суток",
+      "image": "",
+      "category": 13,
+      "price": "1350.00",
+      "date_of_production": "2024-01-26",
+      "date_last_changes": "2024-01-26"
     }
   },
   {
-    "model": "mainapp.category",
+    "model": "mainapp.product",
     "pk": 2,
     "fields": {
-      "name_category": "Напиток",
-      "description_category": "Водка"
+      "name": "Водка \"Царская\", 0,5",
+      "description": "Водка объемом 0,5 литра",
+      "image": "",
+      "category": 12,
+      "price": "750.00",
+      "date_of_production": "2024-01-26",
+      "date_last_changes": "2024-01-26"
     }
   },
   {
-    "model": "mainapp.category",
+    "model": "mainapp.product",
     "pk": 3,
     "fields": {
-      "name_category": "Напиток",
-      "description_category": "Джин-Тонник"
+      "name": "Горошек \"Бондюэль\", 375 г",
+      "description": "Консервированный горошек масса 375 грамм",
+      "image": "",
+      "category": 15,
+      "price": "270.00",
+      "date_of_production": "2024-01-26",
+      "date_last_changes": "2024-01-26"
     }
   },
   {
-    "model": "mainapp.category",
+    "model": "mainapp.product",
     "pk": 4,
     "fields": {
-      "name_category": "Гастроном",
-      "description_category": "Колбаса"
+      "name": "Картофель упакованный, 3кг",
+      "description": "Картофель белый, мытый, упакован в сетку, масса 3 кг, Египет",
+      "image": "",
+      "category": 16,
+      "price": "195.00",
+      "date_of_production": "2024-01-26",
+      "date_last_changes": "2024-01-26"
     }
   },
   {
-    "model": "mainapp.category",
+    "model": "mainapp.product",
     "pk": 5,
     "fields": {
-      "name_category": "Гастроном",
-      "description_category": "Сыр"
-    }
-  },
-  {
-    "model": "mainapp.category",
-    "pk": 6,
-    "fields": {
-      "name_category": "Гастроном",
-      "description_category": "Молоко"
+      "name": "Бананы, вес",
+      "description": "Бананы, большие, спелые, Индия",
+      "image": "",
+      "category": 17,
+      "price": "92.00",
+      "date_of_production": "2024-01-26",
+      "date_last_changes": "2024-01-26"
     }
   }
 ]
