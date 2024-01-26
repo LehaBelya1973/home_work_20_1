@@ -6,11 +6,11 @@ from mainapp.models import Product, Category
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('pk', 'name',
-                    'price', 'product_category')
-    list_filter = ('product_category',)
+                    'price', 'category')
+    list_filter = ('category',)
     search_fields = ('name', 'description')
 
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'name_category')
+    list_display = ('pk', 'name')

@@ -8,9 +8,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         category_list = [
-            {'name_category': 'Напиток'},
-            {'name_category': 'Гастроном'},
-            {'name_category': 'Гастроном'}
+            {'name': 'Напиток'},
+            {'name': 'Гастроном'},
+            {'name': 'Гастроном'}
         ]
 
         category_for_create = []
