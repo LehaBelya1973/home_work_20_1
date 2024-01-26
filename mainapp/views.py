@@ -1,12 +1,12 @@
 from django.shortcuts import render
 
-from mainapp.models import Category
+from mainapp.models import Product
 
 
 def index(request):
     context = {
-        'object_list': Category.objects.all(),
-        'title': 'Магазин - категории товаров',
+        'object_list': Product.objects.all()[:3],
+        'title': 'Магазин - наши товары:',
     }
     return render(request, 'main/index.html', context)
 
