@@ -3,7 +3,18 @@
 {% block content %}
 <div class="row">
     {% for object in object_list %}
-        {% include 'main/includes/inc_category.html' with object=object %}
+        <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+            <div class="card-body">
+                <p class="card-text">{{ object.name}}</p>
+                    <p class="card-text">{{object.description }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     {% endfor %}
     <div>
         {% endblock %}
