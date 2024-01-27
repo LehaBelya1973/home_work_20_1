@@ -5,7 +5,7 @@
                     <p class="card-text">{{object.description }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <a href="{% url 'mainapp:category_product' object.pk %}" type="button" class="btn btn-sm btn-outline-secondary">К товарам</a>
+                        <a href="{% url 'mainapp:category_product' object.category.pk %}" type="button" class="btn btn-sm btn-outline-secondary">К товарам</a>
                     </div>
                 </div>
             </div>

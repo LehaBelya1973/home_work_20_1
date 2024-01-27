@@ -6,6 +6,7 @@ from mainapp.models import Product, Category
 def index(request):
     context = {
         'object_list': Product.objects.all()[:3],
+        'category_list': Category.objects.all(),
         'title': 'Магазин - Главная',
     }
     return render(request, 'main/index.html', context)
